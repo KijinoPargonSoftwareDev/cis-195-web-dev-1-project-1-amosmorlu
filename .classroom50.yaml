@@ -1,0 +1,7 @@
+schema: "classroom50/repo-config/v1"
+classroom: "cis-195-web-dev-1"
+assignment: "project-1"
+owner:
+  username: "amosmorlu"
+  id: 321148069
+  accepted_at: "2026-09-22T17:03:56Z"
