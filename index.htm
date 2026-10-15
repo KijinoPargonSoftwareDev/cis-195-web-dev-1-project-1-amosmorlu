@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Organ Keyboard History</title>
+  <link rel="stylesheet" href="Style.css"> 
+</head>
+<body>
+    <header>
+        <h1>🎹 Organ keyboard History</h1>
+        <input type="checkbox" id="menu-btn">
+        <label for="menu-btn" class="hamburger"><span></span><span></span><span></span></label>
+        <nav>
+            <a href="#home" onclick="show('home')">Home</a>
+            <a href="#ancient" onclick="show('ancient')">Ancient</a>
+            <a href="#modern" onclick="show('modern')">Modern</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="page active">
+            <h2>Keyboard Evolution</h2>
+            <div class="columns">
+                <div class="card"><p>The organ keyboard — 
+                    the earliest form of the pipe organ — 
+                    was invented in the 3rd century BC by the Greek engineer and inventor 
+                    Ctesibius of Alexandria</p>
+                    <p> <img src="https://cdn.britannica.com/98/134798-050-4CFBDE9D/Ctesibius-of-Alexandria.jpg?w=300" alt="Historical organ description" class="img-box"> </p>
+                </div>
+
+
+                <div class="card">
+                    <div class="img-box"><img src="https://i.ytimg.com/vi/e8O8JXsfCJs/oar2.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLD1U1YzKyyXGfbZotlmOBDfYzDhJg&usqp=CCk" alt="Cathedral Pipe Organ Pipes" class="img-box"></div>
+                    <div class="img-box"><img src="https://img.apmcdn.org/ea5a5116a8c8578c8159f8571361844d68640d37/uncropped/0e48c5-italy-torino-sta-rita-zanin-lg.jpg" alt="Historical mechanical organ action keyboard tracker link" class="img-box"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ancient" class="page">
+            <h2>The Ancient Hydraulis</h2>
+            <div class="columns">
+                <div class="card"><p>In the 19th century, 
+                    the organ transformed from a hand-crafted church instrument into both a massive, 
+                    technologically advanced orchestral pipe organ and a mass-produced middle-class status symbol for the home</p></div>
+                <div class="card"><div class="img-box"><img src="https://pipedreams.publicradio.org/gallery/us_midwest/south_dakota/images/sioux-falls_fumc_nordlie_lg.jpg" alt="Four manual historical pipe organ keyboard console layout" class="img-box"></div></div>
+        </section>
+
+        <section id="modern" class="page">
+            <h2>Modern Era</h2>
+            <div class="columns">
+                <div class="card"><p>This is the modern organ</p></div>
+                <div class="card">
+                    <div class="img-box"><img src="https://bcdn.vendora.gr/0/56/38/563820a144f26debeb7437e62812de3bff64f749.jpg?class=lsq" alt="Four manual historical pipe organ keyboard console layout" class="img-box">
+</div>
+                    <div class="img-box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3dtSv02eqp75TRXKPiWHYzdACsOj80_rBsC44SLJjlw&s" alt="Four manual historical pipe organ keyboard console layout" class="img-box">
+</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function show(id) {
+            document.getElementById('menu-btn').checked = false;
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.getElementById(id).classList.add('active'); 
+        } 
+    </script>
+</body>
+</html>
